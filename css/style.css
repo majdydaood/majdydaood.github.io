@@ -1,0 +1,120 @@
+* {
+  font-family: Monospace;
+  font-size: 16px;
+  padding: 0px;
+}
+
+#commandContainer {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(12, 12, 12);
+  color: rgb(204, 204, 204);
+}
+
+#console {
+  margin: 0px;
+  padding: 0px;
+}
+
+#head {
+  margin: 10px 0px 10px 10px;
+}
+
+#marker{
+  position: relative;
+  right: 10px;
+}
+
+#input {
+  resize: none;
+  margin: 0px 0px 0px 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(12, 12, 12);
+  color: rgb(204, 204, 204);
+  caret-color: transparent;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+}
+
+.command {
+  padding-bottom: 10px;
+}
+
+span.margin-start {
+  margin: 0px 0px 0px 5px;
+}
+
+a {
+  color: rgb(204, 204, 204);
+}
+
+div.title {
+  white-space: pre;
+  font-size: 1vw;
+}
+
+.lightgreen {
+  color: lightgreen !important;
+}
+
+.darkgreen {
+  color: darkgreen !important;
+}
+
+.lightblue {
+  color: lightskyblue !important;
+}
+
+.darkblue {
+  color: darkblue !important;
+}
+
+.white {
+  color: rgb(204, 204, 204) !important;
+}
+
+.black {
+  color: rgb(12, 12, 12) !important;
+}
+
+.dark {
+  background-color: rgb(12, 12, 12)!important;
+}
+
+.light {
+  background-color: rgb(255, 255, 255)!important;
+}
+
+.cerTable td:nth-child(1) a,
+.coursTable td:nth-child(1) a {
+  text-decoration: none;
+}
+
+.cerTable td:nth-child(2),
+.cerTable td:nth-child(3),
+.cerTable td:nth-child(4),
+.coursTable td:nth-child(2) {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .cerTable td:nth-child(4),
+  .coursTable td:nth-child(3) {
+    display: none;
+  }
+
+  .cerTable table table {
+    display: none;
+  }
+  .cerTable table td,
+  .coursTable table td {
+    padding-top: 10px;
+  }
+}

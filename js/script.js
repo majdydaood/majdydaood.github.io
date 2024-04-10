@@ -161,7 +161,7 @@ document.addEventListener("keydown", function (event) {
         historyIndex += 1;
       }
     }
-    if (historyIndex != history.length) {
+    if (historyIndex != history.length && historyIndex !== -1) {
       input.value = history[historyIndex];
       resizeInput.call(input);
     }

@@ -8,11 +8,11 @@ head:{
   en : "Majdy DAOOD [version 10.0.22000.613] <br>(c) DAOOD Corporation. All rights reserved."
 },
 cdMsg:{
-  fr: "Le chemin d’accès spécifié est introuvable.",
+  fr: "Le chemin d'accès spécifié est introuvable.",
   en : "The system cannot find the path specified."
 },
 commandNotFoundMsg:{
-  fr: "n’est pas reconnu en tant que commande interne  <br>ou externe, un programme exécutable ou un fichier de commandes.<br><br> Entre (help ou h) Pour plus d’informations sur les commandes.",
+  fr: "n'est pas reconnu en tant que commande interne  <br>ou externe, un programme exécutable ou un fichier de commandes.<br><br> Entre (help ou h) Pour plus d'informations sur les commandes.",
   en : "is not recognized as internal or external command,<br> operable program or Batch file. <br><br> Enter (help or h) For more information about commands."
 },
 

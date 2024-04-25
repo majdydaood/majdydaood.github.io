@@ -10,7 +10,7 @@ var input = document.getElementById("input");
 translate();
 
 document.addEventListener("keydown", function (event) {
-  if (event.code == "NumpadEnter" || event.code == "Enter") {
+  if (event.code == "NumpadEnter" || event.code == "Enter" || event.key == "Enter") {
     event.preventDefault();
 
     let div = document.createElement("div");
@@ -179,6 +179,11 @@ document.addEventListener("keydown", function () {
 });
 
 document.addEventListener("touchend", function () {
+  input.focus();
+  input.click();
+});
+
+document.addEventListener("click", function () {
   input.focus();
   input.click();
 });

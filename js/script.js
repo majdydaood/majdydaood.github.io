@@ -195,7 +195,7 @@ input.focus();
 input.click();
 
 function resizeInput() {
-  this.style.width = this.value.length+1 + "ch";
+  this.style.width = this.value.length + 1 + "ch";
   var _this = this;
   setTimeout(() => {
     _this.selectionStart = _this.selectionEnd = _this.value.length;
@@ -218,7 +218,7 @@ function coloring(color) {
           element.classList.add("lightgreen");
           break;
       }
-    } else if (theme == "light" ) {
+    } else if (theme == "light") {
       switch (color) {
         case "default":
           element.classList.add("black");
@@ -236,11 +236,7 @@ function coloring(color) {
 }
 
 function _(str) {
-  if (lang == "fr") {
-    return strings[str].fr;
-  } else {
-    return strings[str].en;
-  }
+  return strings[str][lang];
 }
 
 function translate() {

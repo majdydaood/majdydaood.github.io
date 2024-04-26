@@ -10,6 +10,7 @@ var input = document.getElementById("input");
 translate();
 
 document.addEventListener("keydown", function (event) {
+  input.focus();
   if (event.code == "NumpadEnter" || event.code == "Enter" || event.key == "Enter") {
     event.preventDefault();
 
@@ -131,8 +132,9 @@ document.addEventListener("keydown", function (event) {
     } else {
       putData("'" + command + "' " + _("commandNotFoundMsg"));
     }
-
-    history.push(command);
+    if (command != '') {
+      history.push(command);
+    }
     historyIndex = -1;
     input.value = "";
     resizeInput.call(input);
@@ -173,10 +175,6 @@ setInterval(() => {
   document.getElementById("marker").innerHTML = toggle ? "_" : "";
   toggle = !toggle;
 }, 500);
-
-document.addEventListener("keydown", function () {
-  input.focus();
-});
 
 document.addEventListener("touchend", function () {
   input.focus();
